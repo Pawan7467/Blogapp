@@ -17,10 +17,11 @@ function Singup() {
     const {register,handleSubmit} = useForm()
 
     const create =async(data)=>{
+      console.log(data)
     seterror("")
     try {
        const userdata = await authservice.createaccount(data) 
-       navigate("/login")
+       console.log("sing",userdata)
        if(userdata){
         const userdata = await authservice.getcurrentuser()
         if(userdata)
