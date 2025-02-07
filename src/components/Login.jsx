@@ -77,7 +77,7 @@ function Login() {
           />
            <Button
             type='submit'
-            classname='w-full'
+            className='w-full'
            >
             sing in
            </Button>
